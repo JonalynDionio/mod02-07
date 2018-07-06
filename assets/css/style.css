@@ -1,0 +1,248 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+
+.nav {
+	background-color: lightyellow;
+	height: 100%;
+	width: 200px;
+	position: fixed;
+
+}
+
+.main {
+ 	background-color: lightgrey;
+ 	/*position: relative;
+ 	left: 200px; */
+ 	margin-left: 200px;
+
+
+}
+
+.banner {
+	background-color: skyblue;
+	position: relative;
+	min-height: 700px;
+
+}
+
+.about {
+	background-color: indianred;
+	min-height: 300px;
+
+}
+
+.services {
+	background-color: midnightblue;
+	min-height: 300px;
+
+}
+
+.projects {
+	background-color: crimson;
+	min-height: 300px;
+
+
+}
+
+.gallery {
+	background-color: orange;
+	min-height: 400px;
+
+}
+
+.footer {
+ 	background-color: green;
+ 	min-height: 50px;
+
+}
+
+.nav, .banner, .about, .services, .projects, .gallery, .footer {
+	padding: 30px;
+
+
+}  
+
+.logo {
+	width: 140px;
+	height: 140px;
+	background-color: grey;
+	margin: auto;
+	margin-bottom: 15px;
+
+}
+
+ul > li { /* review css selectors */
+	list-style: none;
+	background-color: lightblue;
+	margin-bottom: 2px;
+	line-height: 48px; /*base font size 16 * 3 = 48 */
+	text-align: center;
+
+}
+
+ul > li > a {
+	text-decoration: none;
+
+}
+
+
+.box{
+	border: 5px solid white;
+	text-align: center;
+	width: 40%;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+
+.services {
+	color: white;
+
+}
+
+.services > .column {
+	border: 1px solid white;
+	width: 31%;
+	margin-left: 1.16%;
+	margin-right: 1.16%;
+	float: left;
+
+}
+
+.clear:after { /*use to clear floats (don't forget to add this class name to the div we want */
+	content: "";
+	display: block;
+	clear: both;
+
+ }
+
+img[alt*="service"] { /*all img elements with attribute alt containing the word service*/
+	border: 1px solid white;
+	width: 60px;
+	height: 60px;
+	display: block;
+	float: left;
+
+}
+
+img[alt*="service"] ~ p {
+	overflow: hidden;
+
+}
+
+.gallery > .column {
+	border: 1px solid white;
+	width: 23%; /*100 / 4 = 25 */
+	margin-left: 1%;
+	margin-right: 1%;
+	float: left;
+
+}
+
+img[alt*="gallery"] {
+	width: 100%; /* 100% of the width of each column*/
+	height: 200px; 
+	border: 1px solid black;
+	display: block;
+
+
+}
+
+
+img[alt*="social"] {
+	border: 1px solid black;
+	width: 20px;
+	height: 20px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+
+.socmed {
+	float: right;
+
+
+}
+
+
+/*Mobile Styles */
+	@media only screen and (max-width:400px) {
+	
+	.nav {
+	background-color: lightyellow;
+	height: 100%;
+	width: 100%;
+	position: relative;
+
+}
+
+	.main {
+		width: 100%;
+		margin-left: 0px;
+
+	}
+
+	}
+
+
+
+/* Tablet Styles */
+	@media only screen and (min-width:401px) and (max-width:960px) {
+
+
+	.gallery > .column {
+	border: 1px solid white;
+	width: 48%; /*100 / 4 = 25 */
+	margin-left: 1%;
+	margin-right: 1%;
+	float: left;
+
+}
+	.services > .column {
+	border: 1px solid white;
+	width: 100%;
+	float: left;
+
+
+		}
+
+	}
+
+	/* Desktop Style */
+
+	@media only screen and (min-width:961px) {
+
+		.page {
+			width: 960px;
+			margin: 0 auto;
+
+		}
+
+		.feature-1,
+		.feature-2,
+		.feature-3 {
+
+			width: 33.3%;
+			float: left;		
+
+		} 
+		.header {
+		height: 400px;
+
+		}
+
+
+
+
+}
+
